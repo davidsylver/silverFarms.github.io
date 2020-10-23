@@ -1,0 +1,85 @@
+/*
+  
+  
+*/
+
+:root {
+  --color-primary: rgb(27, 235, 27);
+  --color-secondary: #fccb62;
+
+
+  
+  --grey-light-9: #fff;
+  --grey-light-1: #faf9f9;
+  --grey-light-2: #f4f2f2;
+  --grey-light-3: #f0eeee;
+  --grey-light-4: #ccc;
+
+  --grey-dark-1: #333;
+  --grey-dark-2: #777;
+  --grey-dark-3: #999;
+
+
+
+
+  
+  --light-green: lightgreen;
+  --dark-green: darkgreen;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+
+  --border: 1px solid blue;
+
+  --line: 1px solid var(--grey-light-2);
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+
+  line-height: 1.6;
+  color: var(--grey-dark-2);
+  width: 100%;
+}
+body, html {
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Utils */
+.fx {
+  display: flex;
+}
+
+.ct {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cs-p {
+  cursor: pointer; 
+}

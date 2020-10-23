@@ -1,0 +1,304 @@
+.header {
+  &__top {
+    // border: 1px solid blue;
+    // justify-content: space;
+    // background: rgba(14, 14, 14, 0.763);
+    padding-top: 4.35em;
+    position: relative;
+
+    &--wrapper {
+      width: 58%;
+      margin: 0 auto;
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+
+  &__nav {
+    font-size: 1.4rem;
+    text-transform: uppercase;   
+  }
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-right: auto;
+
+  // border: 1px solid orange;
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;    
+  }
+}
+
+.nav {
+  display: flex;
+
+  &__link {
+    color: #fff;
+    transition: color .3s ease-in;
+    display: block;
+    position: relative;
+    z-index: 20;
+    // border: 1px solid blue;
+    border-radius: .5rem;
+    text-align: center;
+
+    
+    &::after {
+      content: "";
+      display: block;
+      width: 2rem;
+      height: .28rem;
+      background: var(--color-secondary);
+    }
+
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+
+    &:hover {
+      color: rgb(255, 171, 16);
+    }
+
+    &:active,
+    &:visited,
+    &--active {
+      // color: var(--color-primary);
+    }
+
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+.welcome {
+  width: fit-content;
+  position: absolute;
+  top: 31%;
+  right: 21%;
+  color: #fff;
+  font-weight: noraml;
+  text-align: right;
+
+  &__text--p1 {
+    font-size: 4rem;
+    font-family: "Sergio UI", Verdana, sans-serif;
+    font-family:   BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    
+    &::first-letter {
+      font-size: 5rem;
+    }
+  }
+
+  &__text--p2 {
+    font-weight: 100;
+    font-size: 1.75rem;
+
+    & span {
+      color: rgb(255, 181, 45);
+      font-size: 2rem;
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+  }
+}
+
+.contact__btn {
+  border: 2px solid #fff;
+  outline: none;
+  background: none;
+
+  color: rgb(255, 181, 45);
+  padding: 2rem 4rem;
+  border-radius: 3rem/50%;
+  margin-top: 2rem;
+  float: right;
+  cursor: pointer;
+  transition: all .4s linear;
+
+
+  &:hover {
+    background-image: linear-gradient(to right, rgb(254, 223, 69), rgb(255, 199, 56));
+    color: #fff;
+    border-color: transparent;
+  }
+}
+
+
+.offerings__title {
+  margin: 1.5rem auto 1rem; 
+
+  color: rgb(255, 181, 45);
+
+  font-size: 3rem;
+  width: fit-content;
+  
+}
+.offerings__list {
+  display: flex;
+  padding: 3rem 0;
+  justify-content: center;
+  // background-color: rgb(247, 247, 247);
+}
+
+.offering {
+  width: 15%;
+  height: 23.5rem;
+  // border: 1px solid blue;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: #fff;  
+
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
+
+  &-imgCont {
+    // border: 1px solid blue;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    background: rgb(242, 242, 242);
+  }
+
+  &__desc {
+    text-align: center;
+    width: 100%;
+    // border: 1px solid orange;
+
+
+
+  }
+}
+
+.produces {
+
+}
+.produce {
+
+  &__title {
+    font-size: 3rem;
+    color: rgb(255, 194, 41);
+    margin: 2rem auto;
+    width: fit-content;
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+  }
+
+  &__item {
+    border: 1px solid blue;
+    display: flex;
+    width: 60%;
+    height: 40rem;
+    margin-bottom: 2rem;
+
+    &:nth-child(even) {
+      flex-flow: row-reverse;
+    }
+
+    &-rt-dp {
+      flex-flow: row-reverse;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 60%;
+  }
+
+  &__desc {
+    background: orange;
+    flex: 1;
+
+
+    &--title {
+      font-size: 2rem;
+      font-weight: bold;
+      font-family:   fangsong;
+
+    }
+
+    &--text {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.cp_h {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+
+}
+
+.footer {
+  background-color: rgb(18, 18, 18);
+  color: #fff;
+  font-size: 1.8rem;
+
+  &__top, &__bottom {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__top {
+    padding: 5rem 0;
+    background-color: #343434;
+
+    & > * {
+      height: fit-content;
+    }
+  }
+
+  &__bottom {
+    background-color: rgb(19, 19, 19);
+    padding: 2.7rem 0 1rem;
+  }
+
+  & > * {
+    // border: 1px solid blue;
+  }
+  &__about {
+    width: 30rem;
+    border: 1px solid blue;
+  }
+
+
+  &__nav {
+
+  }
+}
+
+.contact__info {
+  border: 1px solid blue;
+
+  &--icon {
+    border: 1px solid blue;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+  }
+
+  & > * {
+    display: flex;
+    align-items: center;
+  }
+}
