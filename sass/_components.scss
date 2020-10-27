@@ -3,7 +3,8 @@
 .header {
   &__top {
     padding-top: 4.35em;
-    position: relative;
+    position: relative; 
+    background: #fff;
 
     &--wrapper {
       width: 58%;
@@ -20,8 +21,6 @@
     text-transform: capitalize;
     letter-spacing: 1px;
   }
-
-
 }
 
 .logo {
