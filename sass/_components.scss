@@ -1,3 +1,5 @@
+@import "./materialize/sass/components/carousel";
+
 .header {
   &__top {
     padding-top: 4.35em;
@@ -393,13 +395,6 @@
   & span {
     color: var(--color-primary-2);
   }
-
-
-
-
-
-
-
 }
 
 .back_to_top {
@@ -423,6 +418,21 @@
     transform: translateY(-3px)
   }
 }
+
+.box.leg {
+  
+    height: 20rem;
+    background: #eee;
+    width: 100%;
+  
+}
+
+
+
+
+
+
+
 
 
 
